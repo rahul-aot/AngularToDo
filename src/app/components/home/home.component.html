@@ -1,0 +1,25 @@
+<div class="home-container">
+    <h1>Welcome to the Home Page!</h1>
+    <p>You are successfully logged in.</p>
+    <button  class="logout-btn" (click)="logout()">Logout</button>
+</div>
+<div class="home-content">
+    <div>
+        <button (click)="changeTab('current')" [ngClass]="currentComponent=== 'current' ? 'btn-success': 'current-btn'">live ToDo List</button>
+    </div>
+    <div>
+        <button (click)="changeTab('completed')" [ngClass]="currentComponent=== 'completed' ? 'btn-success': 'current-btn'">Past ToDo List</button>
+    </div>
+</div>
+
+<div class="home-content">
+    <div *ngIf="currentComponent === 'current'">
+        <app-current></app-current>
+    </div>
+    <div *ngIf="currentComponent === 'completed'">
+        <app-completed></app-completed>
+    </div>
+</div>
+
+
+  

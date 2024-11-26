@@ -1,0 +1,31 @@
+
+//styles.scss
+
+$bg-color: #ffffff;
+$bg-second: #b1a5a5;
+$primary-color: #3498db;
+$secondary-color: #cc502e;
+$text-color: #000000;
+$success: #2ecc71;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}

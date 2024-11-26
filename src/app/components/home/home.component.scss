@@ -1,0 +1,70 @@
+@use '../../../styles.scss' as *;
+
+.home-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$bg-color;
+    color:$text-color;
+    text-align: center;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+    }
+  
+    .logout-btn {
+      padding: 10px 20px;
+      font-size: 1.4rem;
+      background-color: $secondary-color;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  .home-content{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        background-color: $secondary-color;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+      .btn-success{
+        background-color: $success;
+        color:$secondary-color;
+        &:hover {
+          background-color: $success;
+          color:$secondary-color;
+        }
+      }
+  }
+  
