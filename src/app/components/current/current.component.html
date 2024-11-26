@@ -1,1 +1,32 @@
-<p>current works!</p>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <h1 class="title">Live ToDo List</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-container">
+    <div>
+      <input
+        type="text"
+        placeholder="Enter a task"
+        [(ngModel)]="taskObj.title"
+      />
+    </div>
+    <div>
+      <button (click)="addTask()">Add Task</button>
+    </div>
+  </div>
+
+  <div class="task-container">
+    <ul>
+        @for (item of taskListObj; track $index) {}
+      <li>
+        <p>{{ item.tasks.title }}</p>
+        <button>Delete</button>
+      </li>
+    </ul>
+  </div>
+</section>

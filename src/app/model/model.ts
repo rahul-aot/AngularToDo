@@ -6,12 +6,19 @@ export class ILogin {
     this.password = '';
   }
 }
-export interface Task {
+export class ITask {
   id: number;
   title: string;
-  description?: string; // optional field for task description
   completed: boolean;
+  constructor() {
+    this.id = 0;
+    this.title = '';
+    this.completed = false;
+  }
 }
-export interface TaskList {
-  tasks: Task[];
+export class TaskList {
+  tasks: ITask[];
+  constructor() {
+    this.tasks = [];
+  }
 }
